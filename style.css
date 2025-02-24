@@ -6,13 +6,6 @@ h2 { font: bold 1.8rem Helvetica, Arial, sans-serif; margin: 0 0 1em; }
 h3 { font: bold 1.5rem Helvetica, Arial, sans-serif; margin: 0 0 1em; }
 h4, h5, h6 { font: bold 1.2rem Helvetica, Arial, sans-serif; margin: 0 0 1em; }
 
-.wf-active body,
-.wf-active h1,
-.wf-active h2,
-.wf-active h3,
-.wf-active h4,
-.wf-active h5,
-.wf-active h6 { font-family: "effra"; }
 
 p, ul, dl, ol, table { font-size: 16px; margin: 0 0 1.5em; }
 .wf-active p { font-weight: 300; }
@@ -50,4 +43,8 @@ li.nav a:hover {
 ul.nodot {
 	list-style-type: none;
 	margin-left: 8%;
+}
+
+td.right {
+	padding-left: 25;
 }
