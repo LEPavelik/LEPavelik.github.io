@@ -28,7 +28,7 @@ li.nav a {
 
 
 li.nav a:hover {
-	background-color: #FF6B81;
+	background-color: #E9B47A;
 }
 
 ul.nodot {
@@ -47,3 +47,29 @@ header {
 body{
 		background-color: #F9E1D9;
 };
+
+<style>
+a:link {
+	color: #FF69B4;
+	background-color: white;
+  text-decoration: none;
+}
+
+a:visited {
+	color: #FF69B4;
+	background-color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #E9B47A;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+	color: #8E735B;
+	background-color: white;
+  text-decoration: underline;
+}
+</style>
