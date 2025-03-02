@@ -72,4 +72,9 @@ a:active {
 	background-color: white;
   text-decoration: underline;
 }
+
+#headshot {
+  border-radius: 50%;
+	border: 6px solid #999;
+}
 </style>
