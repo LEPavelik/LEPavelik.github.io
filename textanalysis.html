@@ -21,9 +21,9 @@
   </header>
   <h2>Voyant Tools -</h2>
   <h3>Word Cloud</h3>
-<p>The word cloud tool found in Voyant helped show me some of the most commonly used words among all of the texts in my corpus. Across all of them, the terms “nos” and “00” were two of the most commonly seen. Nos took the lead, as it was seen in my texts 853 times, but it was mostly found in the text from Mark Campbell. After doing some research, I found out that “00” was found when listing dollar amounts of certain hair items, and “nos” was used to describe the number of something. For example, it references the different strands of hair that are used while braiding as section Nos. 1 or section Nos. 3 so that the reader had a better visual.</p>
-<p>While it was interesting to see how often these terms were used in my texts, I decided to add them into my “stopwords” list, which ultimately removed them from my word cloud completely. I felt as if these terms were not super important to my corpus overall. After making this change, the word “braid” become my most commonly seen term, as it was used 648 times.</p>
-<p>It was additionally fascinating to see how many of the most common words came from the text from Mark Campbell, which Voyant also described as being the longest in length of all of my texts. To be more specific, the Mark Campbell text was 42,022 words long while the shortest was Claudia Kidwell’s text at 18,056 words long. Although I have not read this text in great detail, I assume that there are so many repeated words and phrases due to the fact that it talks about one repeating subject: braids. There are only so many terms you can use when describing the same concept over and over again.</p>
+<p>The word cloud tool found in Voyant helped show me some of the most commonly used words among all of the texts in my corpus. This was my favorite tool that Voyant provided, as the differently colored words caught my eye. I believe that it is not just visually appealing, but also easy to read and understand. This tool was the most helpful to my goals and interests as I can easily tell what the subjects of the texts in my corpus were from the repeated usage of certain words.</p>
+<p>Across all of them, the terms “nos” and “00” were two of the most commonly seen. Nos took the lead, as it was seen in my texts 853 times. It is worth mentioning that it was mostly found in the text from Mark Campbell. After doing some research, I found out that “00” was found when listing dollar amounts of certain hair items, also in the Mark Campbell text, and “nos” was used to describe the number of something. For example, it references the different strands of hair that are used while braiding as section Nos. 1 or section Nos. 3 so that the reader had a better visual of what the process of creating the braid should look like. While it was interesting to see how often these terms were used in my texts, I decided to add them into my “stopwords” list, which ultimately removed them from my word cloud completely. I felt as if these terms were not super important to my corpus overall. After making this change, the word “braid” become my most commonly seen term, as it was used 648 times.</p>
+<p>It was additionally fascinating to see how many of the most common words came from the text from Mark Campbell, which Voyant also described as being the longest in length of all of my texts. To be more specific, the Mark Campbell text was 42,022 words long while the shortest was Claudia Kidwell’s text at 18,056 words long. Although I have not read this text from Mark Campbell in great detail, I assume that there are so many repeated words and phrases due to the fact that it talks about one repeating subject: braids. There are only so many terms you can use when describing the same concept over and over again.</p>
 <p>Being that the text from Mark Campbell is so long when compared to the others, it makes sense that Voyant is also showing that it is the one with the largest number of average words per sentence. This text contains roughly about 34.3 words per sentence while the others range from 19.0-27.5 words per sentence.</p>
 <p>Thinking back to the word cloud, it was easy for me to skim over the words used in the collage and pick out the terms in the text that I decided to encode. For my encoded text from my corpus, I decided to go with the one by Florence Mary Gardiner which is titled “The Evolution of Fashion”. I felt like I should look closer into this text specifically because it had a title that interested me and was conveniently organized in chapter structure. Some of the words from the word cloud that I could easily tell were from this text were “silk”, “sleeve”, “skirt”, and more!</p>
   <iframe style='width: 401px; height: 288px;' src='https://voyant-tools.org/tool/Cirrus/?stopList=keywords-11be07009e40896c47e85906df2c0e0a&corpus=5760461db3c9e4bd127fd1a652e1dc62'></iframe>
@@ -31,12 +31,31 @@
 <hr width="100%" color="grey" size="3">
 
 <h2>Encoded Text -</h2>
-<h3> The Evolution of Fashion by Florence Mary Gardiner</h3>
-  <iframe style='width: 400px; height: 288px;' src='https://voyant-tools.org/tool/Reader/?stopList=keywords-11be07009e40896c47e85906df2c0e0a&skipToDocId=f41f1ab34adfa9d6cc1a811553cd7fa0&corpus=5760461db3c9e4bd127fd1a652e1dc62'></iframe>
+<h3> "The Evolution of Fashion" by Florence Mary Gardiner</h3>
+<p>After thinking for a while about which elements I wanted to use in my XML markup for “The Evolution of Fashion” by Florence Mary Gardiner, I decided to include words that needed more clarity, clothing items, clothing materials, and different time periods. The text below will include some examples of how I specifically encoded each of these different categories.<p>
+
+<h4>Clothing Items</h4>
+<code>&lt;clothing type="bottom" definition="trousers that come down to the knee"&gt;knee-breeches&lt;/clothing&gt;</code>
+
+<h4>Clothing Materials and Fabrics</h4>
+<code>&lt;material&gt;silk&lt;/material&gt;</code>
+
+<h4>Word Clarity</h4>
+<code>&lt;define definition="a sculpture or model of a person"&gt;effigy&lt;/define&gt;</code>
+
+<h4>Time Periods</h4>
+<code>&lt;timeperiod definition="1837-1901"&gt;Victorian era&lt;/timeperiod&gt;</code>
+
+<p>All of the categories listed here were encoded with a purpose behind it. Being that this text largely speaks about fashion and the way that people used to dress in the past, it was inevitable to include and define different types of clothing items and their materials. Afterall, without these elements, the text itself would lose all form of meaning. You cannot possibly write a document with the subject of fashion without detailing what items of clothing were worn and what they were made out of. Some words related to clothing and their materials that are less commonly seen such as togas, coronets, cravat, and brocade would probably be skimmed over and never understood if it did not have an attached definition and clothing type listed.</p>
+<p>Additionally, this text references very old and dates forms of fashion over the years, including time periods such as the Stuart era, Victorian era, The French Revolution, and more. This is a key part to understanding the text, as many confusing words which were once considered the norm were used. This is where the “define” category that I created comes in handy, as it helps the reader to wrap their head around words that they otherwise might have had to search the internet for. Knowing what the given time period it was when these clothing items were popular is also very important to know, as it explains and gives context as to why certain items such as petticoats, loin cloths, aigrettes, and knee-breeches were being worn. Without knowing around what year it was, the reader may believe that the items being spoken about relate to the present day. This not only confuses the reader, but it would also falsely showcase this information in the text as wrong or outdated.</p>
+<p>Attached below is a copy of “The Evolution of Fashion” by Florence Mary Gardiner.</p>
+
+<p><iframe style='width: 400px; height: 288px;' src='https://voyant-tools.org/tool/Reader/?stopList=keywords-11be07009e40896c47e85906df2c0e0a&skipToDocId=f41f1ab34adfa9d6cc1a811553cd7fa0&corpus=5760461db3c9e4bd127fd1a652e1dc62'></iframe></p>
 
 <hr width="100%" color="grey" size="3">
 
 <h2>Other Texts in the Corpus -</h2>
+<p>Even though I did not have a chance to look deeply into the rest of the texts included in my corpus, as they were not the ones that I chose to encode and markup, they still play an important role. I may not have read these texts word for word, but analyzing their data and trends through Voyant’s tools gave me a grand picture of their contents and overall ideas. Their subjects relate to the idea of fashion and beauty, which was what I strived to embody through my corpus. This is a category that I am personally interested in, so it was exciting to work with different texts that relate to this topic.</p>
 <h3>Women's Bathing and Swimming Costume in the United States</h3>
   <iframe style='width: 400px; height: 288px;' src='https://voyant-tools.org/tool/Reader/?stopList=keywords-11be07009e40896c47e85906df2c0e0a&skipToDocId=413552728b45c32b97ae1721ba62740a&corpus=5760461db3c9e4bd127fd1a652e1dc62'></iframe>
 <h3>Dress Design</h3>
