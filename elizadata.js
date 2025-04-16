@@ -468,7 +468,6 @@ var elizaKeywords = [
      "I don't know!",
      "Have you any idea why you can't (2) ?"
   ]],
-  "goto what"
  ["*", [
      "goto what"
   ]]
