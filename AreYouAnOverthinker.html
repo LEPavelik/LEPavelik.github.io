@@ -9,7 +9,15 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play AreYouAnOverthinker.</tw-noscript></noscript></tw-story>
-<tw-storydata name="AreYouAnOverthinker" startnode="1" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="6C27F8DE-9728-44A6-86CA-FDE4204350C2" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="450,50" size="100,100">(align:&quot;=&gt;&lt;=&quot;)[&#39;&#39;An (text-color:red)[//(text-style:&quot;blur&quot;,&quot;shudder&quot;)[(text-rotate-z:351)[Overthinker&#39;s]]//] World.&#39;&#39;]
+<tw-storydata name="AreYouAnOverthinker" startnode="1" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="6C27F8DE-9728-44A6-86CA-FDE4204350C2" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story {
+  background-color: #FFFAFA;
+  color: black;
+}
+
+tw-passage {
+  font-size: 18px;
+  text-align: center;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="450,50" size="100,100">(align:&quot;=&gt;&lt;=&quot;)[&#39;&#39;An (text-color:red)[//(text-style:&quot;blur&quot;,&quot;shudder&quot;)[(text-rotate-z:351)[Overthinker&#39;s]]//] World.&#39;&#39;]
 
 =&gt;&lt;=
 As you read through the story, select the option that would best represent your tendencies in the real world.
@@ -25,19 +33,19 @@ Please enter your name into the box, and then hit &quot;Start&quot;. The name yo
 
 (input-box:2bind $Name,&quot;===XXXXXXXXXXXXXX===&quot;,&quot;Enter name here.&quot;)
 
-[[Start.-&gt;School]]</tw-passagedata><tw-passagedata pid="2" name="School" tags="" position="450,200" size="100,100">(set:$requiredpassage)
+[[Start.-&gt;School]]</tw-passagedata><tw-passagedata pid="2" name="School" tags="" position="450,200" size="100,100">(set:$requiredpassage to $requiredpassage + 1)
 You walk into your first class of the day, English, and sit down in your usual seat at the front of the room. It is just a normal, typical day.
 
 
 
-[[Unpack your backpack.-&gt;Unpacking backpack]]</tw-passagedata><tw-passagedata pid="3" name="Unpacking backpack" tags="" position="450,350" size="100,100">(set:$decisionpassage)
+[[Unpack your backpack.-&gt;Unpacking backpack]]</tw-passagedata><tw-passagedata pid="3" name="Unpacking backpack" tags="" position="450,350" size="100,100">(set:$decisionpassage to $decisionpassage + 1)
 You unzip your backpack and reach in to grab your school materials. What do you grab first?
 
 
 
 [[Laptop.-&gt;Laptop image]]
 
-[[Water bottle.-&gt;Water bottle fall]]</tw-passagedata><tw-passagedata pid="4" name="Laptop image" tags="" position="300,475" size="100,100">(set:$decisionpassage)
+[[Water bottle.-&gt;Water bottle fall]]</tw-passagedata><tw-passagedata pid="4" name="Laptop image" tags="" position="300,475" size="100,100">(set:$decisionpassage to $decisionpassage + 1)
 You chose to take your //laptop// out of your bag first.
 
 You reach into your bag and pull out your computer. You open it up and a few tabs that you had open last night pop up. One of them was your crush&#39;s Instagram profile. They sitting a few chairs behind you. Your heart begins to race, what if someone saw? You were looking at an old photo from all the way back in 2016...
@@ -49,7 +57,7 @@ You reach into your bag and pull out your computer. You open it up and a few tab
 
 [[Close out of the tab and do a quick look around to see if anybody is looking. What if somebody saw my tab open? Would they tell them? What if they saw themselves?-&gt;laptop overthinking]]
 
-</tw-passagedata><tw-passagedata pid="5" name="Water bottle fall" tags="" position="600,475" size="100,100">(set:$decisionpassage)
+</tw-passagedata><tw-passagedata pid="5" name="Water bottle fall" tags="" position="600,475" size="100,100">(set:$decisionpassage to $decisionpassage + 1)
 You chose to take your //water bottle// out of your bag first.
 
 You reach into the side pocket of your backpack and grab your big 32oz water bottle. Gotta stay hydrated. All is well until you lose your grip from how heavy it is, and your bottle smacks the hard school floor. It makes a loud //(text-style:&quot;italic&quot;,&quot;rumble&quot;)[BANG]// noise.
@@ -59,7 +67,7 @@ You reach into the side pocket of your backpack and grab your big 32oz water bot
 [[Laugh it off. Things like this happen, and everybody will forget that this ever happened in a few minutes.-&gt;water non-overthinking]]
 
 
-[[Your cheeks feel hot, and your stomach turns into an instant knot. You are mortified. You don&#39;t say anything to anyone and slowly slide the bottle back into your bag. You&#39;re not thirsty anymore.-&gt;water overthinking]]</tw-passagedata><tw-passagedata pid="6" name="Class starts" tags="" position="450,600" size="100,100">(set:$decisionpassage)
+[[Your cheeks feel hot, and your stomach turns into an instant knot. You are mortified. You don&#39;t say anything to anyone and slowly slide the bottle back into your bag. You&#39;re not thirsty anymore.-&gt;water overthinking]]</tw-passagedata><tw-passagedata pid="6" name="Class starts" tags="" position="450,600" size="100,100">(set:$decisionpassage to $decisionpassage + 1)
 Eventually, your teacher walks in and sits down at their desk. They start class with a presentation on the book your class is reading, which you have not yet read. This teacher is known to randomly call on students, and keeps glancing over in your direction.
 
 
@@ -85,7 +93,7 @@ You let out a sigh of relief. You were worried for nothing. They just liked your
 
 
 
-[[Continue.]]</tw-passagedata><tw-passagedata pid="9" name="Continue." tags="" position="450,875" size="100,100">(set:$decisionpassage)
+[[Continue.]]</tw-passagedata><tw-passagedata pid="9" name="Continue." tags="" position="450,875" size="100,100">(set:$decisionpassage to $decisionpassage + 1)
 You and your teacher have a short discussion about Nirvana in the middle of class, and then she goes back to teaching. You weren&#39;t called on for the rest of class.
 
 The bell (text-style:&quot;rumble&quot;)[(text-colour:yellow)[rings]], and you run off to your next class.
@@ -117,7 +125,7 @@ You realize that they must have been talking about throwing you a suprise birthd
 
 
 
-[[Next.]]</tw-passagedata><tw-passagedata pid="12" name="Next." tags="" position="450,1125" size="100,100">(set:$decisionpassage)
+[[Next.]]</tw-passagedata><tw-passagedata pid="12" name="Next." tags="" position="450,1125" size="100,100">(set:$decisionpassage to $decisionpassage + 1)
 After chemistry class, you go to a few more classes, and then you finally wrap up your academic day with lunch. You&#39;re looking forward to lunch, not only because it is the last part of the school day, but also because you get to fuel your body before track and field practice.
 
 Your school has different lines for different food items. You are standing in the grilled chicken line (//(text-style:&quot;sway&quot;)[or so you thought]//). You finally make your way up to the food, and notice that you have accidentally been standing in the hamburger line the entire time.
@@ -145,7 +153,7 @@ After you make your way through, you realize that none of the other options soun
 
 It is a good thing that you remained calm during this situation, as it worked out in your favor.
 
-[[Move on.]]</tw-passagedata><tw-passagedata pid="15" name="Move on." tags="" position="450,1375" size="100,100">(set:$decisionpassage)
+[[Move on.]]</tw-passagedata><tw-passagedata pid="15" name="Move on." tags="" position="450,1375" size="100,100">(set:$decisionpassage to $decisionpassage + 1)
 After getting your food, you find a table and take a seat. It&#39;s where you normally sit. Your friends don&#39;t have the same lunch period as you, so you resultingly sit alone most days. Seems a bit sad, but you actually like getting a few moments of peace and alone time in your day.
 
 However, on this particular day, someone random sits in front of you. You have no idea why they did this, since you were at a completely empty table. It&#39;s very awkward now, and you both keep looking up at each other and making weird eye contact. You do not know this person.
@@ -168,7 +176,7 @@ You moved away from the random person, and everything was fine. You both kept ea
 You didn&#39;t move away from this random person, and they keep making weird sounds at you from accross the table. You&#39;re scared and you wish that you worked up the courage to move away...
 
 
-[[Continue to track and field practice]]</tw-passagedata><tw-passagedata pid="18" name="Continue to track and field practice" tags="" position="450,1625" size="100,100">(set:$decisionpassage)
+[[Continue to track and field practice]]</tw-passagedata><tw-passagedata pid="18" name="Continue to track and field practice" tags="" position="450,1625" size="100,100">(set:$decisionpassage to $decisionpassage + 1)
 You finish up with your lunch and return your lunch tray. The bell rings again, which lets you know it is time for track and field practice. 
 
 You go to the locker room to get your gear on. You put on your running shorts, your practice tank top provided by the school, your socks, and your sneakers. You also bring your running spikes with you incase your coach makes you wear them during practice.
@@ -194,7 +202,7 @@ Despite this, you decided to attempt to braid your hair anyway, even though you 
 
 You finish up with your hair, and glance at yourself in the mirror before walking out of the locker room. It looks awful. Random pieces of hair are sticking out everywhere, and it is loose. You look up at the clock, and notice that if you take any more time in the locker room, you will be late for practice. Now you have to go out there looking like this all because of your overthinking.
 
-[[Go out to the track]] </tw-passagedata><tw-passagedata pid="21" name="Go out to the track" tags="" position="450,1875" size="100,100">(set:$decisionpassage)
+[[Go out to the track]] </tw-passagedata><tw-passagedata pid="21" name="Go out to the track" tags="" position="450,1875" size="100,100">(set:$decisionpassage to $decisionpassage + 1)
 You stopped fixing your hair and went out to the track for practice. 
 
 As soon as you step foot onto the track, your coach calls you over to talk with them.
@@ -221,7 +229,7 @@ Your coach knows you pretty well, and can definitely tell that you are nervous t
 
 &quot;I will decide by the end of practice today whether or not I think you should continue with this event... You seem a bit shaken up right now, so I really hope that you can put this aside so that it doesn&#39;t affect your performance. Good luck!&quot;
 
-[[Go over to the pole vaulting team]] </tw-passagedata><tw-passagedata pid="24" name="Go over to the pole vaulting team" tags="" position="450,2125" size="100,100">(set:$requiredpassage)
+[[Go over to the pole vaulting team]] </tw-passagedata><tw-passagedata pid="24" name="Go over to the pole vaulting team" tags="" position="450,2125" size="100,100">(set:$requiredpassage to $requiredpassage + 1)
 After wrapping up the chat with your coach, you walk over to the pole vaulting area where the pole vaulting team is about to start their practice. 
 
 You were taught some of the basics, and eventually, after watching many demonstrations, it is your turn to give it a try.
@@ -231,7 +239,7 @@ You start running with your pole, and put your stick on the ground. You lift you
 Your coach walks up to you after practice, and says congrats for doing so well! He offers you a spot on the pole vaulting team, and you are very happy.
 
 
-[[Go home]]</tw-passagedata><tw-passagedata pid="25" name="Go home" tags="" position="450,2250" size="100,100">(set:$decisionpassage)
+[[Go home]]</tw-passagedata><tw-passagedata pid="25" name="Go home" tags="" position="450,2250" size="100,100">(set:$decisionpassage to $decisionpassage + 1)
 You end track practice, and are now on your way home. Even though you are old enough to drive, you do not have a car yet, so you need to ride the bus home.
 
 You sit down near the front of the bus. As you are driving, you notice that the bus driver isn&#39;t slowing down like they normally do when they near your house. Before you know it, the bus completely misses your stop in front of your house, and you keep driving.
@@ -257,7 +265,7 @@ The driver looks up into the rear-view mirror and sees you still sitting in a se
 
 You explain to the driver that they accidentally missed your stop, so you never got off. They told you that they wish you would have said someting sooner, as they would have been more than happy to swing back around to your house so that you could have gotten off way sooner. Looks like you should have said something.
 
-[[Walk inside]] </tw-passagedata><tw-passagedata pid="28" name="Walk inside" tags="" position="450,2500" size="100,100">(set:$decisionpassage)
+[[Walk inside]] </tw-passagedata><tw-passagedata pid="28" name="Walk inside" tags="" position="450,2500" size="100,100">(set:$decisionpassage to $decisionpassage + 1)
 You walk inside your house, where you are greeted by your mother who is watching Jeopardy on TV. You don&#39;t like Jeopardy, in fact, this show actually makes you quite uncomfortable for some reason. You don&#39;t know why, but you just dislike it so much.
 
 
@@ -279,7 +287,7 @@ You don&#39;t ask your mom to change the channel, and you just go up the stairs 
 You don&#39;t know it, but your mom is upset that you decided not to spend time with her after your day at school. She misses you. Maybe you could have asked her to watch something else, and spent some quality time with her.
 
 
-[[Continue with your day]]</tw-passagedata><tw-passagedata pid="31" name="Continue with your day" tags="" position="450,2750" size="100,100">(set:$decisionpassage)
+[[Continue with your day]]</tw-passagedata><tw-passagedata pid="31" name="Continue with your day" tags="" position="450,2750" size="100,100">(set:$decisionpassage to $decisionpassage + 1)
 In your room, you hop on your phone. You start scrolling on Instagram, and notice that one of your friends resposted a photo that someone who you haven&#39;t seen in a while. You are curious to see how they&#39;re doing in their life now, as you have not seen this person in many years, so you click onto their account.
 
 You start scrolling, and you (very unfortunately) accidentally like one of their posts from years ago!
@@ -301,7 +309,7 @@ You decide to just go about your day, and nothing happens. Great! It&#39;s like 
 You decide to send a long apology paragraph to this person. They read your text, and leave you on read. This makes you overthink even more, and you are one ball of anxiety. You shouldn&#39;t have said anything at all.
 
 
-[[Go down to the kitchen]] </tw-passagedata><tw-passagedata pid="34" name="Go down to the kitchen" tags="" position="450,3000" size="100,100">(set:$decisionpassage)
+[[Go down to the kitchen]] </tw-passagedata><tw-passagedata pid="34" name="Go down to the kitchen" tags="" position="450,3000" size="100,100">(set:$decisionpassage to $decisionpassage + 1)
 After that weird little Instagram mishap... you go down to the kitchen to get a snack. You decide to make yourself a bowl of ice cream, and top it with some chocolate chips. Yum!
 
 As you are pouring the chocolate chips onto your bowl, you notice that one hits the floor. Before you&#39;re able to react, your dog snatches the chocolate piece up into his mouth. You try to retrieve it from him, but you are too late, and he has already swallowed it. You remember that dogs aren&#39;t allowed to have chocolate.
@@ -324,20 +332,26 @@ However, to your suprise, she seems irritated. &quot;You woke me up from my nap 
 While this reassures you that your dog will be okay, you&#39;re upset that you chose to wake your mom up for this. Maybe you should have let her sleep...
 
 
-[[Go back up to your room]] </tw-passagedata><tw-passagedata pid="37" name="Go back up to your room" tags="" position="450,3250" size="100,100">(set:$requiredpassage)
+[[Go back up to your room]] </tw-passagedata><tw-passagedata pid="37" name="Go back up to your room" tags="" position="450,3250" size="100,100">(set:$requiredpassage to $requiredpassage + 1)
 You&#39;ve had a long day, and you decide to turn your light off and go to sleep. You deserve some rest.
 
 This is the end of your journey.
 
 [[Click here to see how you did.]]
 
-</tw-passagedata><tw-passagedata pid="38" name="Click here to see how you did." tags="" position="450,3375" size="100,100">(if: $overthink &gt; 6)[If you are seeing this screen, this means that you overthought most, if not all of the questions!]
+</tw-passagedata><tw-passagedata pid="38" name="Click here to see how you did." tags="" position="450,3375" size="100,100">(if: $overthink &gt; 6)[If you are seeing this screen, this means that you overthought //most//, if not //all// of the decisions!
+This might be part of a bigger problem, and reaching out to loved ones or a mental health professional may be the best course of action. We often overthink when we lack confidence, so if you find yourself overthinking your choices because of this, it is best to work on this aspect of your life!]
 
-(else-if: $overthink is 5)[If you are seeing this screen, this means that you overthought around half of the questions!]
+(else-if: $overthink is 5)[If you are seeing this screen, this means that you overthought around //half// of the decisions!
+You are well-rounded, and chose about an equal amount of rational and overthinking choices. To reduce the number of times you are inclined to choose an overthinking option, remember to look at the bigger picture before making a choice.
+Think to yourself: &quot;Will this really matter in 5 minutes, 5 months, or even 5 years?&quot;]
 
-(else-if: $overthink is 6)[If you are seeing this screen, this means that you overthought around half of the questions!]
+(else-if: $overthink is 6)[If you are seeing this screen, this means that you overthought around //half// of the decisions!
+You are well-rounded, and chose about an equal amount of rational and overthinking choices. To reduce the number of times you are inclined to choose an overthinking option, remember to look at the bigger picture before making a choice.
+Think to yourself: &quot;Will this really matter in 5 minutes, 5 months, or even 5 years?&quot;]
 
-(else-if: $overthink &lt; 5)[If you are seeing this screen, this means that you chose rational decisions more than you overthought your choices! Good job!]
+(else-if: $overthink &lt; 5)[If you are seeing this screen, this means that you overthought //less than half// or //none// of the decisions! Good job!
+It seems as if you don&#39;t need much advice with how to stop overthinking, but it is always important to keep healthy habits in mind regardless. When you choose a rational decision over an overthinking one, remind yourself of what your mindset is like. Then, repeat this same mindset for all of your decisions, even the overthinking ones! This will help to reduce the number of times we overthink to zero if we haven&#39;t already met this goal.]
 
 </tw-passagedata><tw-passagedata pid="39" name="water non-overthinking" tags="" position="750,525" size="100,100">(set: $rational to $rational + 1)
 Good thing you stayed calm and rational, because after scanning the room, you realized that no one was looking in your direction anyways. Nobody was judging you or making fun of you.
