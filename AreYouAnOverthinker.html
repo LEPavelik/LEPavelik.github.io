@@ -215,7 +215,7 @@ As soon as you step foot onto the track, your coach calls you over to talk with 
 [[Oh no, why does coach need to speak with me? I wonder if I did something wrong... What could it be? I am scared to walk over there but I will, I really hope they don&#39;t realize how anxious I am.-&gt;coach overthinking]]</tw-passagedata><tw-passagedata pid="22" name="coach non-overthinking" tags="" position="575,2000" size="100,100">(set: $rational to $rational + 1)
 You walk over to your coach and greet them. They get straight to the point.
 
-&quot;$name, I have been thinking about this a lot, and I have decided to let you give pole vaulting a try. This is a real honor, as I only let the best on the team try out this event. I will decide by the end of practice today whether or not I think you should continue with this event. Good luck!&quot;
+&quot;$Name, I have been thinking about this a lot, and I have decided to let you give pole vaulting a try. This is a real honor, as I only let the best on the team try out this event. I will decide by the end of practice today whether or not I think you should continue with this event. Good luck!&quot;
 
 You knew that there would be nothing to worry about, and this was good news. You&#39;re excited to try pole vaulting, but you don&#39;t want to let your coach down.
 
@@ -223,7 +223,7 @@ You knew that there would be nothing to worry about, and this was good news. You
 [[Go over to the pole vaulting team]]</tw-passagedata><tw-passagedata pid="23" name="coach overthinking" tags="" position="325,2000" size="100,100">(set: $overthink to $overthink + 1)
 You walk over to your coach and greet them. They get straight to the point.
 
-&quot;$name, I have been thinking about this a lot, and I have decided to let you give pole vaulting a try. This is a real honor, as I only let the best on the team try out this event. And... are you okay?&#39;
+&quot;$Name, I have been thinking about this a lot, and I have decided to let you give pole vaulting a try. This is a real honor, as I only let the best on the team try out this event. And... are you okay?&#39;
 
 Your coach knows you pretty well, and can definitely tell that you are nervous to be talking to them. After reassuring your coach that you are fine, they continue speaking.
 
@@ -340,18 +340,26 @@ This is the end of your journey.
 [[Click here to see how you did.]]
 
 </tw-passagedata><tw-passagedata pid="38" name="Click here to see how you did." tags="" position="450,3375" size="100,100">(if: $overthink &gt; 6)[If you are seeing this screen, this means that you overthought //most//, if not //all// of the decisions!
-This might be part of a bigger problem, and reaching out to loved ones or a mental health professional may be the best course of action. We often overthink when we lack confidence, so if you find yourself overthinking your choices because of this, it is best to work on this aspect of your life!]
+This might be part of a bigger problem, and reaching out to loved ones or a mental health professional may be the best course of action. We often overthink when we lack confidence, so if you find yourself overthinking your choices because of this, it is best to work on this aspect of your life!
+
+(text-style:&quot;fade-in-out&quot;)[THANK YOU FOR PLAYING!]]
 
 (else-if: $overthink is 5)[If you are seeing this screen, this means that you overthought around //half// of the decisions!
 You are well-rounded, and chose about an equal amount of rational and overthinking choices. To reduce the number of times you are inclined to choose an overthinking option, remember to look at the bigger picture before making a choice.
-Think to yourself: &quot;Will this really matter in 5 minutes, 5 months, or even 5 years?&quot;]
+Think to yourself: &quot;Will this really matter in 5 minutes, 5 months, or even 5 years?&quot;
+
+(text-style:&quot;fade-in-out&quot;)[THANK YOU FOR PLAYING!]]
 
 (else-if: $overthink is 6)[If you are seeing this screen, this means that you overthought around //half// of the decisions!
 You are well-rounded, and chose about an equal amount of rational and overthinking choices. To reduce the number of times you are inclined to choose an overthinking option, remember to look at the bigger picture before making a choice.
-Think to yourself: &quot;Will this really matter in 5 minutes, 5 months, or even 5 years?&quot;]
+Think to yourself: &quot;Will this really matter in 5 minutes, 5 months, or even 5 years?&quot;
+
+(text-style:&quot;fade-in-out&quot;)[THANK YOU FOR PLAYING!]]
 
 (else-if: $overthink &lt; 5)[If you are seeing this screen, this means that you overthought //less than half// or //none// of the decisions! Good job!
-It seems as if you don&#39;t need much advice with how to stop overthinking, but it is always important to keep healthy habits in mind regardless. When you choose a rational decision over an overthinking one, remind yourself of what your mindset is like. Then, repeat this same mindset for all of your decisions, even the overthinking ones! This will help to reduce the number of times we overthink to zero if we haven&#39;t already met this goal.]
+It seems as if you don&#39;t need much advice with how to stop overthinking, but it is always important to keep healthy habits in mind regardless. When you choose a rational decision over an overthinking one, remind yourself of what your mindset is like. Then, repeat this same mindset for all of your decisions, even the overthinking ones! This will help to reduce the number of times we overthink to zero if we haven&#39;t already met this goal.
+
+(text-style:&quot;fade-in-out&quot;)[THANK YOU FOR PLAYING!]]
 
 </tw-passagedata><tw-passagedata pid="39" name="water non-overthinking" tags="" position="750,525" size="100,100">(set: $rational to $rational + 1)
 Good thing you stayed calm and rational, because after scanning the room, you realized that no one was looking in your direction anyways. Nobody was judging you or making fun of you.
